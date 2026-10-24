@@ -1,0 +1,345 @@
+{
+  "schema_version": "1.0.0",
+  "vocabulary_version": "mock-1.0.0",
+  "is_mock": true,
+  "postings": [
+    {
+      "posting_id": "mock-001",
+      "source_id": "synthetic-fixture",
+      "raw_text": "Required: Python and PostgreSQL.\nUse Python daily.\nPreferred: AWS.",
+      "cleaned_text": "Required: Python and PostgreSQL.\nUse Python daily.\nPreferred: AWS.",
+      "classifications": {
+        "occupation": "software_developer",
+        "specialization": "backend",
+        "seniority": "entry_level",
+        "geography": "US"
+      },
+      "classification_basis": "hand_assigned_synthetic_fixture",
+      "eligible": true,
+      "analyzed": true,
+      "exclusion_reason": null,
+      "skill_evidence": [
+        {
+          "canonical_id": "skill:python",
+          "posting_id": "mock-001",
+          "matched_text": "Python",
+          "start": 10,
+          "end": 16,
+          "excerpt": "Required: Python and PostgreSQL.",
+          "requirement_context": "required",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        },
+        {
+          "canonical_id": "skill:postgresql",
+          "posting_id": "mock-001",
+          "matched_text": "PostgreSQL",
+          "start": 21,
+          "end": 31,
+          "excerpt": "Required: Python and PostgreSQL.",
+          "requirement_context": "required",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        },
+        {
+          "canonical_id": "skill:python",
+          "posting_id": "mock-001",
+          "matched_text": "Python",
+          "start": 37,
+          "end": 43,
+          "excerpt": "Use Python daily.",
+          "requirement_context": "unspecified",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        },
+        {
+          "canonical_id": "skill:aws",
+          "posting_id": "mock-001",
+          "matched_text": "AWS",
+          "start": 62,
+          "end": 65,
+          "excerpt": "Preferred: AWS.",
+          "requirement_context": "preferred",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        }
+      ]
+    },
+    {
+      "posting_id": "mock-002",
+      "source_id": "synthetic-fixture",
+      "raw_text": "Required: Python or Java.\nPreferred: Git and GitHub.",
+      "cleaned_text": "Required: Python or Java.\nPreferred: Git and GitHub.",
+      "classifications": {
+        "occupation": "software_developer",
+        "specialization": "backend",
+        "seniority": "entry_level",
+        "geography": "US"
+      },
+      "classification_basis": "hand_assigned_synthetic_fixture",
+      "eligible": true,
+      "analyzed": true,
+      "exclusion_reason": null,
+      "skill_evidence": [
+        {
+          "canonical_id": "skill:python",
+          "posting_id": "mock-002",
+          "matched_text": "Python",
+          "start": 10,
+          "end": 16,
+          "excerpt": "Required: Python or Java.",
+          "requirement_context": "alternative",
+          "alternative_group_id": "mock-002:alt-1",
+          "uncertainty_flags": []
+        },
+        {
+          "canonical_id": "skill:java",
+          "posting_id": "mock-002",
+          "matched_text": "Java",
+          "start": 20,
+          "end": 24,
+          "excerpt": "Required: Python or Java.",
+          "requirement_context": "alternative",
+          "alternative_group_id": "mock-002:alt-1",
+          "uncertainty_flags": []
+        },
+        {
+          "canonical_id": "skill:git",
+          "posting_id": "mock-002",
+          "matched_text": "Git",
+          "start": 37,
+          "end": 40,
+          "excerpt": "Preferred: Git and GitHub.",
+          "requirement_context": "preferred",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        },
+        {
+          "canonical_id": "skill:github",
+          "posting_id": "mock-002",
+          "matched_text": "GitHub",
+          "start": 45,
+          "end": 51,
+          "excerpt": "Preferred: Git and GitHub.",
+          "requirement_context": "preferred",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        }
+      ]
+    },
+    {
+      "posting_id": "mock-003",
+      "source_id": "synthetic-fixture",
+      "raw_text": "No Python experience required.\nRequired: C++ and C#.\nPreferred: .NET and Node.js.",
+      "cleaned_text": "No Python experience required.\nRequired: C++ and C#.\nPreferred: .NET and Node.js.",
+      "classifications": {
+        "occupation": "software_developer",
+        "specialization": "backend",
+        "seniority": "entry_level",
+        "geography": "US"
+      },
+      "classification_basis": "hand_assigned_synthetic_fixture",
+      "eligible": true,
+      "analyzed": true,
+      "exclusion_reason": null,
+      "skill_evidence": [
+        {
+          "canonical_id": "skill:python",
+          "posting_id": "mock-003",
+          "matched_text": "Python",
+          "start": 3,
+          "end": 9,
+          "excerpt": "No Python experience required.",
+          "requirement_context": "explicitly_not_required",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        },
+        {
+          "canonical_id": "skill:c_plus_plus",
+          "posting_id": "mock-003",
+          "matched_text": "C++",
+          "start": 41,
+          "end": 44,
+          "excerpt": "Required: C++ and C#.",
+          "requirement_context": "required",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        },
+        {
+          "canonical_id": "skill:c_sharp",
+          "posting_id": "mock-003",
+          "matched_text": "C#",
+          "start": 49,
+          "end": 51,
+          "excerpt": "Required: C++ and C#.",
+          "requirement_context": "required",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        },
+        {
+          "canonical_id": "skill:dotnet",
+          "posting_id": "mock-003",
+          "matched_text": ".NET",
+          "start": 64,
+          "end": 68,
+          "excerpt": "Preferred: .NET and Node.js.",
+          "requirement_context": "preferred",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        },
+        {
+          "canonical_id": "skill:nodejs",
+          "posting_id": "mock-003",
+          "matched_text": "Node.js",
+          "start": 73,
+          "end": 80,
+          "excerpt": "Preferred: .NET and Node.js.",
+          "requirement_context": "preferred",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        }
+      ]
+    },
+    {
+      "posting_id": "mock-004",
+      "source_id": "synthetic-fixture",
+      "raw_text": "Required: JavaScript and SQL.\nPreferred: Golang, R programming, and C programming.",
+      "cleaned_text": "Required: JavaScript and SQL.\nPreferred: Golang, R programming, and C programming.",
+      "classifications": {
+        "occupation": "software_developer",
+        "specialization": "backend",
+        "seniority": "entry_level",
+        "geography": "US"
+      },
+      "classification_basis": "hand_assigned_synthetic_fixture",
+      "eligible": true,
+      "analyzed": true,
+      "exclusion_reason": null,
+      "skill_evidence": [
+        {
+          "canonical_id": "skill:javascript",
+          "posting_id": "mock-004",
+          "matched_text": "JavaScript",
+          "start": 10,
+          "end": 20,
+          "excerpt": "Required: JavaScript and SQL.",
+          "requirement_context": "required",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        },
+        {
+          "canonical_id": "skill:sql",
+          "posting_id": "mock-004",
+          "matched_text": "SQL",
+          "start": 25,
+          "end": 28,
+          "excerpt": "Required: JavaScript and SQL.",
+          "requirement_context": "required",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        },
+        {
+          "canonical_id": "skill:go",
+          "posting_id": "mock-004",
+          "matched_text": "Golang",
+          "start": 41,
+          "end": 47,
+          "excerpt": "Preferred: Golang, R programming, and C programming.",
+          "requirement_context": "preferred",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        },
+        {
+          "canonical_id": "skill:r",
+          "posting_id": "mock-004",
+          "matched_text": "R",
+          "start": 49,
+          "end": 50,
+          "excerpt": "Preferred: Golang, R programming, and C programming.",
+          "requirement_context": "preferred",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        },
+        {
+          "canonical_id": "skill:c",
+          "posting_id": "mock-004",
+          "matched_text": "C",
+          "start": 68,
+          "end": 69,
+          "excerpt": "Preferred: Golang, R programming, and C programming.",
+          "requirement_context": "preferred",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        }
+      ]
+    },
+    {
+      "posting_id": "mock-005",
+      "source_id": "synthetic-fixture",
+      "raw_text": "Work with kind colleagues. Be curious and communicate clearly.",
+      "cleaned_text": "Work with kind colleagues. Be curious and communicate clearly.",
+      "classifications": {
+        "occupation": "software_developer",
+        "specialization": "backend",
+        "seniority": "entry_level",
+        "geography": "US"
+      },
+      "classification_basis": "hand_assigned_synthetic_fixture",
+      "eligible": true,
+      "analyzed": true,
+      "exclusion_reason": null,
+      "skill_evidence": []
+    },
+    {
+      "posting_id": "mock-006",
+      "source_id": "synthetic-fixture",
+      "raw_text": "",
+      "cleaned_text": "",
+      "classifications": {
+        "occupation": "software_developer",
+        "specialization": "backend",
+        "seniority": "entry_level",
+        "geography": "US"
+      },
+      "classification_basis": "hand_assigned_synthetic_fixture",
+      "eligible": true,
+      "analyzed": false,
+      "exclusion_reason": "unusable_description",
+      "skill_evidence": []
+    },
+    {
+      "posting_id": "mock-007",
+      "source_id": "synthetic-fixture",
+      "raw_text": "Required: Python.",
+      "cleaned_text": "Required: Python.",
+      "classifications": {
+        "occupation": "software_developer",
+        "specialization": "backend",
+        "seniority": "senior",
+        "geography": "US"
+      },
+      "classification_basis": "hand_assigned_synthetic_fixture",
+      "eligible": false,
+      "analyzed": false,
+      "exclusion_reason": "seniority_mismatch",
+      "skill_evidence": []
+    },
+    {
+      "posting_id": "mock-008",
+      "source_id": "synthetic-fixture",
+      "raw_text": "Required: Python.",
+      "cleaned_text": "Required: Python.",
+      "classifications": {
+        "occupation": "software_developer",
+        "specialization": "backend",
+        "seniority": "entry_level",
+        "geography": null
+      },
+      "classification_basis": "hand_assigned_synthetic_fixture",
+      "eligible": false,
+      "analyzed": false,
+      "exclusion_reason": "geography_unknown",
+      "skill_evidence": []
+    }
+  ]
+}

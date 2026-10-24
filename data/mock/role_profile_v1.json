@@ -1,0 +1,306 @@
+{
+  "schema_version": "1.0.0",
+  "vocabulary_version": "mock-1.0.0",
+  "is_mock": true,
+  "role_id": "backend_entry_us",
+  "display_title": "Entry-level backend software engineering (US) — MOCK",
+  "onet_code": null,
+  "metadata": {
+    "filters": {
+      "occupation": "software_developer",
+      "specialization": "backend",
+      "seniority": "entry_level",
+      "geography": "US",
+      "rules_version": "mock-assignment-1.0.0",
+      "unknown_policy": "exclude_and_report",
+      "conflict_policy": "exclude_and_report"
+    },
+    "sources": [
+      {
+        "source_id": "synthetic-fixture",
+        "source_type": "synthetic",
+        "uri": null,
+        "version": "mock-1.0.0",
+        "collection_dates": null,
+        "status": "synthetic"
+      }
+    ],
+    "generated_at": "2026-10-24T00:38:06Z",
+    "eligible_postings_count": 6,
+    "analyzed_postings_count": 5,
+    "excluded_unusable_descriptions_count": 1,
+    "data_status": "unassessed",
+    "limitations": [
+      "MOCK ONLY: all postings, classifications, evidence and frequencies are synthetic integration examples.",
+      "No O*NET associations or downloaded posting observations contribute to this fixture.",
+      "Mention frequency includes alternatives and explicit negatives; it is not mandatory-requirement frequency.",
+      "The vocabulary is illustrative, incomplete, and not a source-derived role recommendation.",
+      "A real sample adequacy threshold has not been selected."
+    ]
+  },
+  "onet_skills": [],
+  "posting_skills": [
+    {
+      "canonical_id": "skill:aws",
+      "display_name": "AWS",
+      "category": "cloud_platform",
+      "mention_count": 1,
+      "mention_rate": 0.2,
+      "evidence_sample": [
+        {
+          "posting_id": "mock-001",
+          "excerpt": "Preferred: AWS.",
+          "requirement_context": "preferred",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        }
+      ]
+    },
+    {
+      "canonical_id": "skill:c",
+      "display_name": "C",
+      "category": "programming_language",
+      "mention_count": 1,
+      "mention_rate": 0.2,
+      "evidence_sample": [
+        {
+          "posting_id": "mock-004",
+          "excerpt": "Preferred: Golang, R programming, and C programming.",
+          "requirement_context": "preferred",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        }
+      ]
+    },
+    {
+      "canonical_id": "skill:c_plus_plus",
+      "display_name": "C++",
+      "category": "programming_language",
+      "mention_count": 1,
+      "mention_rate": 0.2,
+      "evidence_sample": [
+        {
+          "posting_id": "mock-003",
+          "excerpt": "Required: C++ and C#.",
+          "requirement_context": "required",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        }
+      ]
+    },
+    {
+      "canonical_id": "skill:c_sharp",
+      "display_name": "C#",
+      "category": "programming_language",
+      "mention_count": 1,
+      "mention_rate": 0.2,
+      "evidence_sample": [
+        {
+          "posting_id": "mock-003",
+          "excerpt": "Required: C++ and C#.",
+          "requirement_context": "required",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        }
+      ]
+    },
+    {
+      "canonical_id": "skill:dotnet",
+      "display_name": ".NET",
+      "category": "framework",
+      "mention_count": 1,
+      "mention_rate": 0.2,
+      "evidence_sample": [
+        {
+          "posting_id": "mock-003",
+          "excerpt": "Preferred: .NET and Node.js.",
+          "requirement_context": "preferred",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        }
+      ]
+    },
+    {
+      "canonical_id": "skill:git",
+      "display_name": "Git",
+      "category": "version_control",
+      "mention_count": 1,
+      "mention_rate": 0.2,
+      "evidence_sample": [
+        {
+          "posting_id": "mock-002",
+          "excerpt": "Preferred: Git and GitHub.",
+          "requirement_context": "preferred",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        }
+      ]
+    },
+    {
+      "canonical_id": "skill:github",
+      "display_name": "GitHub",
+      "category": "developer_platform",
+      "mention_count": 1,
+      "mention_rate": 0.2,
+      "evidence_sample": [
+        {
+          "posting_id": "mock-002",
+          "excerpt": "Preferred: Git and GitHub.",
+          "requirement_context": "preferred",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        }
+      ]
+    },
+    {
+      "canonical_id": "skill:go",
+      "display_name": "Go",
+      "category": "programming_language",
+      "mention_count": 1,
+      "mention_rate": 0.2,
+      "evidence_sample": [
+        {
+          "posting_id": "mock-004",
+          "excerpt": "Preferred: Golang, R programming, and C programming.",
+          "requirement_context": "preferred",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        }
+      ]
+    },
+    {
+      "canonical_id": "skill:java",
+      "display_name": "Java",
+      "category": "programming_language",
+      "mention_count": 1,
+      "mention_rate": 0.2,
+      "evidence_sample": [
+        {
+          "posting_id": "mock-002",
+          "excerpt": "Required: Python or Java.",
+          "requirement_context": "alternative",
+          "alternative_group_id": "mock-002:alt-1",
+          "uncertainty_flags": []
+        }
+      ]
+    },
+    {
+      "canonical_id": "skill:javascript",
+      "display_name": "JavaScript",
+      "category": "programming_language",
+      "mention_count": 1,
+      "mention_rate": 0.2,
+      "evidence_sample": [
+        {
+          "posting_id": "mock-004",
+          "excerpt": "Required: JavaScript and SQL.",
+          "requirement_context": "required",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        }
+      ]
+    },
+    {
+      "canonical_id": "skill:nodejs",
+      "display_name": "Node.js",
+      "category": "runtime",
+      "mention_count": 1,
+      "mention_rate": 0.2,
+      "evidence_sample": [
+        {
+          "posting_id": "mock-003",
+          "excerpt": "Preferred: .NET and Node.js.",
+          "requirement_context": "preferred",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        }
+      ]
+    },
+    {
+      "canonical_id": "skill:postgresql",
+      "display_name": "PostgreSQL",
+      "category": "database",
+      "mention_count": 1,
+      "mention_rate": 0.2,
+      "evidence_sample": [
+        {
+          "posting_id": "mock-001",
+          "excerpt": "Required: Python and PostgreSQL.",
+          "requirement_context": "required",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        }
+      ]
+    },
+    {
+      "canonical_id": "skill:python",
+      "display_name": "Python",
+      "category": "programming_language",
+      "mention_count": 3,
+      "mention_rate": 0.6,
+      "evidence_sample": [
+        {
+          "posting_id": "mock-001",
+          "excerpt": "Required: Python and PostgreSQL.",
+          "requirement_context": "required",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        },
+        {
+          "posting_id": "mock-002",
+          "excerpt": "Required: Python or Java.",
+          "requirement_context": "alternative",
+          "alternative_group_id": "mock-002:alt-1",
+          "uncertainty_flags": []
+        },
+        {
+          "posting_id": "mock-003",
+          "excerpt": "No Python experience required.",
+          "requirement_context": "explicitly_not_required",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        }
+      ]
+    },
+    {
+      "canonical_id": "skill:r",
+      "display_name": "R",
+      "category": "programming_language",
+      "mention_count": 1,
+      "mention_rate": 0.2,
+      "evidence_sample": [
+        {
+          "posting_id": "mock-004",
+          "excerpt": "Preferred: Golang, R programming, and C programming.",
+          "requirement_context": "preferred",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        }
+      ]
+    },
+    {
+      "canonical_id": "skill:scikit_learn",
+      "display_name": "scikit-learn",
+      "category": "machine_learning_library",
+      "mention_count": 0,
+      "mention_rate": 0.0,
+      "evidence_sample": []
+    },
+    {
+      "canonical_id": "skill:sql",
+      "display_name": "SQL",
+      "category": "query_language",
+      "mention_count": 1,
+      "mention_rate": 0.2,
+      "evidence_sample": [
+        {
+          "posting_id": "mock-004",
+          "excerpt": "Required: JavaScript and SQL.",
+          "requirement_context": "required",
+          "alternative_group_id": null,
+          "uncertainty_flags": []
+        }
+      ]
+    }
+  ]
+}

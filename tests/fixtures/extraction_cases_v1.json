@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "vocabulary_version": "mock-1.0.0",
+  "is_mock": true,
+  "status": "acceptance_cases_for_future_extractor_not_executed",
+  "cases": [
+    {"text": "We go to the office.", "expected_ids": []},
+    {"text": "Go programming and Golang", "expected_ids": ["skill:go"]},
+    {"text": "R&D; a grade C; PG accommodation", "expected_ids": []},
+    {"text": "R programming and C programming", "expected_ids": ["skill:c", "skill:r"]},
+    {"text": "JavaScript and GitHub", "expected_ids": ["skill:github", "skill:javascript"]},
+    {"text": "C++ C# .NET Node.js", "expected_ids": ["skill:c_plus_plus", "skill:c_sharp", "skill:dotnet", "skill:nodejs"]},
+    {"text": "Postgres, Amazon Web Services, sklearn", "expected_ids": ["skill:aws", "skill:postgresql", "skill:scikit_learn"]},
+    {"text": "PostgreSQL", "expected_ids": ["skill:postgresql"], "must_not_infer_ids": ["skill:sql"]},
+    {"text": "Required: Python or Java.", "expected_ids": ["skill:java", "skill:python"], "expected_context": "alternative", "expected_shared_alternative_group": true},
+    {"text": "No Python experience required.", "expected_ids": ["skill:python"], "expected_context": "explicitly_not_required"},
+    {"text": "Preferred: Python.", "expected_ids": ["skill:python"], "expected_context": "preferred"},
+    {"text": "Python. Python.", "expected_ids": ["skill:python"], "expected_distinct_posting_count": 1},
+    {"text": "", "expected_ids": [], "usable_requirement_text": false}
+  ]
+}

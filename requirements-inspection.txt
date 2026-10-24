@@ -1,0 +1,7 @@
+# Python 3.12; optional source-inspection tools, separate from contract validation.
+pandas==2.2.3
+numpy==1.26.4
+python-dateutil==2.8.2
+pytz==2024.1
+tzdata==2023.3
+six==1.16.0

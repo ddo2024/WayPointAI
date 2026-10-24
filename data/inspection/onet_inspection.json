@@ -1,0 +1,1577 @@
+{
+  "inspection_version": "1.0.0",
+  "is_mock": false,
+  "source_id": "onet",
+  "release_version": "31.0",
+  "release_month": "2026-08",
+  "source_landing_page": "https://www.onetcenter.org/database.html",
+  "release_reference": "https://www.onetcenter.org/db_releases.html",
+  "inspected_at_utc": "2026-10-24T00:34:50Z",
+  "collection_dates": null,
+  "date_semantics": "Download timestamps record acquisition. Release month records publication. The Date column in ratings is a source update month, not the collection date. No collection dates were inferred.",
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "official_guidance_url": "https://www.onetcenter.org/license_db.html",
+    "attribution": "Source: O*NET® 31.0 Database, U.S. Department of Labor, Employment and Training Administration. Licensed under CC BY 4.0.",
+    "modifications": "Downloaded CSV files are unmodified. This inspection summary, joined records, and computed counts are project-generated derivatives.",
+    "guidance": "Credit the versioned source and USDOL/ETA, link the license, identify modifications, and preserve the O*NET trademark notice. Optional developer registration is not required to download."
+  },
+  "files": [
+    {
+      "file_path": "data/raw/onet/31.0/content_model_reference.csv",
+      "download_url": "https://www.onetcenter.org/dl_files/database/db_31_0_csv/content_model_reference.csv",
+      "documentation_url": "https://www.onetcenter.org/dictionary/31.0/csv/content_model_reference.html",
+      "sha256": "370033744006dbd5df048431d42a402f6741a00a229b6d0f4e4f4249b6399c04",
+      "size_bytes": 235856,
+      "download_completed_at_utc": "2026-10-24T00:33:20Z",
+      "row_count": 3006,
+      "headers": [
+        "Element ID",
+        "Element Name",
+        "Description"
+      ],
+      "read_types": {
+        "Element ID": "string",
+        "Element Name": "string",
+        "Description": "string"
+      },
+      "empty_string_counts": {
+        "Element ID": 0,
+        "Element Name": 0,
+        "Description": 2419
+      },
+      "candidate_key_columns": [
+        "Element ID"
+      ],
+      "duplicate_candidate_key_rows": 0,
+      "malformed_row_count": 0,
+      "software_developers_row_count": null,
+      "software_developers_update_dates": []
+    },
+    {
+      "file_path": "data/raw/onet/31.0/essential_skills.csv",
+      "download_url": "https://www.onetcenter.org/dl_files/database/db_31_0_csv/essential_skills.csv",
+      "documentation_url": "https://www.onetcenter.org/dictionary/31.0/csv/essential_skills.html",
+      "sha256": "68c4d31d8c55077238395dca40cc4e6d32e6a608b5474bb8264b1f98ae415bd7",
+      "size_bytes": 2328135,
+      "download_completed_at_utc": "2026-10-24T00:32:51Z",
+      "row_count": 18200,
+      "headers": [
+        "O*NET-SOC Code",
+        "Title",
+        "Element ID",
+        "Element Name",
+        "Scale ID",
+        "Scale Name",
+        "Data Value",
+        "N",
+        "Standard Error",
+        "Lower CI Bound",
+        "Upper CI Bound",
+        "Recommend Suppress",
+        "Not Relevant",
+        "Date",
+        "Domain Source"
+      ],
+      "read_types": {
+        "O*NET-SOC Code": "string",
+        "Title": "string",
+        "Element ID": "string",
+        "Element Name": "string",
+        "Scale ID": "string",
+        "Scale Name": "string",
+        "Data Value": "string",
+        "N": "string",
+        "Standard Error": "string",
+        "Lower CI Bound": "string",
+        "Upper CI Bound": "string",
+        "Recommend Suppress": "string",
+        "Not Relevant": "string",
+        "Date": "string",
+        "Domain Source": "string"
+      },
+      "empty_string_counts": {
+        "O*NET-SOC Code": 0,
+        "Title": 0,
+        "Element ID": 0,
+        "Element Name": 0,
+        "Scale ID": 0,
+        "Scale Name": 0,
+        "Data Value": 0,
+        "N": 0,
+        "Standard Error": 0,
+        "Lower CI Bound": 0,
+        "Upper CI Bound": 0,
+        "Recommend Suppress": 0,
+        "Not Relevant": 9100,
+        "Date": 0,
+        "Domain Source": 0
+      },
+      "candidate_key_columns": [
+        "O*NET-SOC Code",
+        "Element ID",
+        "Scale ID"
+      ],
+      "duplicate_candidate_key_rows": 0,
+      "malformed_row_count": 0,
+      "software_developers_row_count": 20,
+      "software_developers_update_dates": [
+        "08/2025"
+      ]
+    },
+    {
+      "file_path": "data/raw/onet/31.0/occupation_data.csv",
+      "download_url": "https://www.onetcenter.org/dl_files/database/db_31_0_csv/occupation_data.csv",
+      "documentation_url": "https://www.onetcenter.org/dictionary/31.0/csv/occupation_data.html",
+      "sha256": "a09eae1d6609686e44e05b7290993a1c8b523d8ca224bc0eedc194c855c3ee02",
+      "size_bytes": 268030,
+      "download_completed_at_utc": "2026-10-24T00:32:42Z",
+      "row_count": 1016,
+      "headers": [
+        "O*NET-SOC Code",
+        "Title",
+        "Description"
+      ],
+      "read_types": {
+        "O*NET-SOC Code": "string",
+        "Title": "string",
+        "Description": "string"
+      },
+      "empty_string_counts": {
+        "O*NET-SOC Code": 0,
+        "Title": 0,
+        "Description": 0
+      },
+      "candidate_key_columns": [
+        "O*NET-SOC Code"
+      ],
+      "duplicate_candidate_key_rows": 0,
+      "malformed_row_count": 0,
+      "software_developers_row_count": 1,
+      "software_developers_update_dates": []
+    },
+    {
+      "file_path": "data/raw/onet/31.0/scales_reference.csv",
+      "download_url": "https://www.onetcenter.org/dl_files/database/db_31_0_csv/scales_reference.csv",
+      "documentation_url": "https://www.onetcenter.org/dictionary/31.0/csv/scales_reference.html",
+      "sha256": "bcba23858ce21ecaacbde303a8993e35d46724b4afb8c9ec2b10e04f42adcfc9",
+      "size_bytes": 1006,
+      "download_completed_at_utc": "2026-10-24T00:33:20Z",
+      "row_count": 33,
+      "headers": [
+        "Scale ID",
+        "Scale Name",
+        "Minimum",
+        "Maximum"
+      ],
+      "read_types": {
+        "Scale ID": "string",
+        "Scale Name": "string",
+        "Minimum": "string",
+        "Maximum": "string"
+      },
+      "empty_string_counts": {
+        "Scale ID": 0,
+        "Scale Name": 0,
+        "Minimum": 0,
+        "Maximum": 0
+      },
+      "candidate_key_columns": [
+        "Scale ID"
+      ],
+      "duplicate_candidate_key_rows": 0,
+      "malformed_row_count": 0,
+      "software_developers_row_count": null,
+      "software_developers_update_dates": []
+    },
+    {
+      "file_path": "data/raw/onet/31.0/software_skills.csv",
+      "download_url": "https://www.onetcenter.org/dl_files/database/db_31_0_csv/software_skills.csv",
+      "documentation_url": "https://www.onetcenter.org/dictionary/31.0/csv/software_skills.html",
+      "sha256": "6aabb96b464288db849580e6510530efff3f80e25dde2bb23f1fc36bb526b016",
+      "size_bytes": 3557545,
+      "download_completed_at_utc": "2026-10-24T00:33:19Z",
+      "row_count": 31821,
+      "headers": [
+        "O*NET-SOC Code",
+        "Title",
+        "Workplace Example",
+        "Element ID",
+        "Element Name",
+        "Hot Technology",
+        "In Demand"
+      ],
+      "read_types": {
+        "O*NET-SOC Code": "string",
+        "Title": "string",
+        "Workplace Example": "string",
+        "Element ID": "string",
+        "Element Name": "string",
+        "Hot Technology": "string",
+        "In Demand": "string"
+      },
+      "empty_string_counts": {
+        "O*NET-SOC Code": 0,
+        "Title": 0,
+        "Workplace Example": 0,
+        "Element ID": 0,
+        "Element Name": 0,
+        "Hot Technology": 0,
+        "In Demand": 0
+      },
+      "candidate_key_columns": [
+        "O*NET-SOC Code",
+        "Workplace Example",
+        "Element ID"
+      ],
+      "duplicate_candidate_key_rows": 0,
+      "malformed_row_count": 0,
+      "software_developers_row_count": 430,
+      "software_developers_update_dates": []
+    },
+    {
+      "file_path": "data/raw/onet/31.0/task_statements.csv",
+      "download_url": "https://www.onetcenter.org/dl_files/database/db_31_0_csv/task_statements.csv",
+      "documentation_url": "https://www.onetcenter.org/dictionary/31.0/csv/task_statements.html",
+      "sha256": "4568e14d8db6f05551ad37e056e909b13ebae4a26bcb5ff915bb5f281d582c57",
+      "size_bytes": 3461375,
+      "download_completed_at_utc": "2026-10-24T00:33:35Z",
+      "row_count": 18838,
+      "headers": [
+        "O*NET-SOC Code",
+        "Title",
+        "Task ID",
+        "Task",
+        "Task Type",
+        "Incumbents Responding",
+        "Date",
+        "Domain Source"
+      ],
+      "read_types": {
+        "O*NET-SOC Code": "string",
+        "Title": "string",
+        "Task ID": "string",
+        "Task": "string",
+        "Task Type": "string",
+        "Incumbents Responding": "string",
+        "Date": "string",
+        "Domain Source": "string"
+      },
+      "empty_string_counts": {
+        "O*NET-SOC Code": 0,
+        "Title": 0,
+        "Task ID": 0,
+        "Task": 0,
+        "Task Type": 418,
+        "Incumbents Responding": 587,
+        "Date": 0,
+        "Domain Source": 0
+      },
+      "candidate_key_columns": [
+        "O*NET-SOC Code",
+        "Task ID"
+      ],
+      "duplicate_candidate_key_rows": 0,
+      "malformed_row_count": 0,
+      "software_developers_row_count": 17,
+      "software_developers_update_dates": [
+        "08/2025"
+      ]
+    },
+    {
+      "file_path": "data/raw/onet/31.0/transferable_skills.csv",
+      "download_url": "https://www.onetcenter.org/dl_files/database/db_31_0_csv/transferable_skills.csv",
+      "documentation_url": "https://www.onetcenter.org/dictionary/31.0/csv/transferable_skills.html",
+      "sha256": "f17d0419e818a3bf2f55076510c76c4aef01cc8f5aee2670d2f44f6f44ac60f7",
+      "size_bytes": 6081245,
+      "download_completed_at_utc": "2026-10-24T00:33:06Z",
+      "row_count": 45500,
+      "headers": [
+        "O*NET-SOC Code",
+        "Title",
+        "Element ID",
+        "Element Name",
+        "Scale ID",
+        "Scale Name",
+        "Data Value",
+        "N",
+        "Standard Error",
+        "Lower CI Bound",
+        "Upper CI Bound",
+        "Recommend Suppress",
+        "Not Relevant",
+        "Date",
+        "Domain Source"
+      ],
+      "read_types": {
+        "O*NET-SOC Code": "string",
+        "Title": "string",
+        "Element ID": "string",
+        "Element Name": "string",
+        "Scale ID": "string",
+        "Scale Name": "string",
+        "Data Value": "string",
+        "N": "string",
+        "Standard Error": "string",
+        "Lower CI Bound": "string",
+        "Upper CI Bound": "string",
+        "Recommend Suppress": "string",
+        "Not Relevant": "string",
+        "Date": "string",
+        "Domain Source": "string"
+      },
+      "empty_string_counts": {
+        "O*NET-SOC Code": 0,
+        "Title": 0,
+        "Element ID": 0,
+        "Element Name": 0,
+        "Scale ID": 0,
+        "Scale Name": 0,
+        "Data Value": 0,
+        "N": 0,
+        "Standard Error": 0,
+        "Lower CI Bound": 0,
+        "Upper CI Bound": 0,
+        "Recommend Suppress": 0,
+        "Not Relevant": 22750,
+        "Date": 0,
+        "Domain Source": 0
+      },
+      "candidate_key_columns": [
+        "O*NET-SOC Code",
+        "Element ID",
+        "Scale ID"
+      ],
+      "duplicate_candidate_key_rows": 0,
+      "malformed_row_count": 0,
+      "software_developers_row_count": 50,
+      "software_developers_update_dates": [
+        "08/2025"
+      ]
+    }
+  ],
+  "software_developers": {
+    "occupation_record": {
+      "O*NET-SOC Code": "15-1252.00",
+      "Title": "Software Developers",
+      "Description": "Research, design, and develop computer and network software or specialized utility programs. Analyze user needs and develop software solutions, applying principles and techniques of computer science, engineering, and mathematical analysis. Update software or enhance existing software capabilities. May work with computer hardware engineers to integrate hardware and software systems, and develop specifications and performance requirements. May maintain databases within an application area, working individually or coordinating database development as part of a team."
+    },
+    "essential_skill_elements_count": 10,
+    "transferable_skill_elements_count": 25,
+    "software_skill_association_rows_count": 430,
+    "software_skill_unique_workplace_examples_count": 430,
+    "software_skill_distinct_source_categories_count": 67,
+    "task_count": 17,
+    "source_category_records": [
+      {
+        "Element ID": "2.A",
+        "Element Name": "Essential Skills",
+        "Description": "Skills you need for most jobs such as reading, writing, math, and learning."
+      },
+      {
+        "Element ID": "2.B",
+        "Element Name": "Transferable Skills",
+        "Description": "Skills you can use across different jobs such as communication, problem solving, and team work."
+      },
+      {
+        "Element ID": "2.E",
+        "Element Name": "Software Skills",
+        "Description": "Using specific programs and applications for work tasks."
+      }
+    ],
+    "rated_skill_associations": [
+      {
+        "element_id": "2.A.1.a",
+        "name": "Reading Comprehension",
+        "source_category_id": "2.A",
+        "source_category_name": "Essential Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 3.5,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 4.25,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.A.1.b",
+        "name": "Active Listening",
+        "source_category_id": "2.A",
+        "source_category_name": "Essential Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 3.38,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 3.88,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.A.1.c",
+        "name": "Writing",
+        "source_category_id": "2.A",
+        "source_category_name": "Essential Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 3.25,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 3.62,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.A.1.d",
+        "name": "Speaking",
+        "source_category_id": "2.A",
+        "source_category_name": "Essential Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 3.12,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 3.62,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.A.1.e",
+        "name": "Mathematics",
+        "source_category_id": "2.A",
+        "source_category_name": "Essential Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 2.75,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 3.25,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.A.1.f",
+        "name": "Science",
+        "source_category_id": "2.A",
+        "source_category_name": "Essential Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 2.12,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 1.88,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "Y",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.A.2.a",
+        "name": "Critical Thinking",
+        "source_category_id": "2.A",
+        "source_category_name": "Essential Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 3.88,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 4.12,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.A.2.b",
+        "name": "Active Learning",
+        "source_category_id": "2.A",
+        "source_category_name": "Essential Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 3.5,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 3.62,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.A.2.c",
+        "name": "Learning Strategies",
+        "source_category_id": "2.A",
+        "source_category_name": "Essential Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 2.62,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 3.12,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.A.2.d",
+        "name": "Monitoring",
+        "source_category_id": "2.A",
+        "source_category_name": "Essential Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 3.0,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 3.5,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.1.a",
+        "name": "Social Perceptiveness",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 2.88,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 3.38,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.1.b",
+        "name": "Coordination",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 3.0,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 3.12,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.1.c",
+        "name": "Persuasion",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 2.75,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 3.12,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.1.d",
+        "name": "Negotiation",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 2.62,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 2.88,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.1.e",
+        "name": "Instructing",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 2.88,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 3.12,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.1.f",
+        "name": "Service Orientation",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 2.88,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 3.0,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.2.i",
+        "name": "Complex Problem Solving",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 3.38,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 3.5,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.3.a",
+        "name": "Operations Analysis",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 3.25,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 3.12,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "Y",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.3.b",
+        "name": "Technology Design",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 3.38,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 3.62,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.3.c",
+        "name": "Equipment Selection",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 2.12,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 1.75,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "Y",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.3.d",
+        "name": "Installation",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 1.88,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 1.0,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.3.e",
+        "name": "Programming",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 4.0,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 4.12,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "Y",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.3.g",
+        "name": "Operations Monitoring",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 2.75,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 2.38,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.3.h",
+        "name": "Operation and Control",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 2.0,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 1.75,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "Y",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.3.j",
+        "name": "Equipment Maintenance",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 1.25,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 0.25,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "Y"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.3.k",
+        "name": "Troubleshooting",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 2.62,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 2.38,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.3.l",
+        "name": "Repairing",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 1.12,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 0.25,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "Y"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.3.m",
+        "name": "Quality Control Analysis",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 2.75,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 2.75,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "Y",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.4.e",
+        "name": "Judgment and Decision Making",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 3.62,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 3.75,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.4.g",
+        "name": "Systems Analysis",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 3.5,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 3.88,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.4.h",
+        "name": "Systems Evaluation",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 3.38,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 4.12,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.5.a",
+        "name": "Time Management",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 3.12,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 3.25,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.5.b",
+        "name": "Management of Financial Resources",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 1.75,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 1.0,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.5.c",
+        "name": "Management of Material Resources",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 1.62,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 1.0,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      },
+      {
+        "element_id": "2.B.5.d",
+        "name": "Management of Personnel Resources",
+        "source_category_id": "2.B",
+        "source_category_name": "Transferable Skills",
+        "ratings": [
+          {
+            "scale_id": "IM",
+            "scale_name": "Importance",
+            "data_value": 2.25,
+            "minimum": 1.0,
+            "maximum": 5.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": null
+          },
+          {
+            "scale_id": "LV",
+            "scale_name": "Level",
+            "data_value": 2.62,
+            "minimum": 0.0,
+            "maximum": 7.0,
+            "source_update_date": "08/2025",
+            "domain_source": "Analyst",
+            "recommend_suppress": "N",
+            "not_relevant": "N"
+          }
+        ]
+      }
+    ],
+    "software_association_examples": [
+      {
+        "O*NET-SOC Code": "15-1252.00",
+        "Title": "Software Developers",
+        "Workplace Example": "Amazon Web Services AWS software",
+        "Element ID": "2.E.6.f",
+        "Element Name": "Data base user interface and query software",
+        "Hot Technology": "Y",
+        "In Demand": "Y"
+      },
+      {
+        "O*NET-SOC Code": "15-1252.00",
+        "Title": "Software Developers",
+        "Workplace Example": "Git",
+        "Element ID": "2.E.5.c",
+        "Element Name": "File versioning software",
+        "Hot Technology": "Y",
+        "In Demand": "Y"
+      },
+      {
+        "O*NET-SOC Code": "15-1252.00",
+        "Title": "Software Developers",
+        "Workplace Example": "GitHub",
+        "Element ID": "2.E.10.a",
+        "Element Name": "Application server software",
+        "Hot Technology": "Y",
+        "In Demand": "Y"
+      },
+      {
+        "O*NET-SOC Code": "15-1252.00",
+        "Title": "Software Developers",
+        "Workplace Example": "JavaScript",
+        "Element ID": "2.E.7.h",
+        "Element Name": "Web platform development software",
+        "Hot Technology": "Y",
+        "In Demand": "Y"
+      },
+      {
+        "O*NET-SOC Code": "15-1252.00",
+        "Title": "Software Developers",
+        "Workplace Example": "Node.js",
+        "Element ID": "2.E.7.h",
+        "Element Name": "Web platform development software",
+        "Hot Technology": "Y",
+        "In Demand": "Y"
+      },
+      {
+        "O*NET-SOC Code": "15-1252.00",
+        "Title": "Software Developers",
+        "Workplace Example": "Oracle Java",
+        "Element ID": "2.E.7.e",
+        "Element Name": "Object or component oriented development software",
+        "Hot Technology": "Y",
+        "In Demand": "Y"
+      },
+      {
+        "O*NET-SOC Code": "15-1252.00",
+        "Title": "Software Developers",
+        "Workplace Example": "PostgreSQL",
+        "Element ID": "2.E.6.j",
+        "Element Name": "Object oriented data base management software",
+        "Hot Technology": "Y",
+        "In Demand": "Y"
+      },
+      {
+        "O*NET-SOC Code": "15-1252.00",
+        "Title": "Software Developers",
+        "Workplace Example": "Python",
+        "Element ID": "2.E.7.e",
+        "Element Name": "Object or component oriented development software",
+        "Hot Technology": "Y",
+        "In Demand": "Y"
+      }
+    ],
+    "task_examples": [
+      {
+        "O*NET-SOC Code": "15-1252.00",
+        "Title": "Software Developers",
+        "Task ID": "21662",
+        "Task": "Analyze user needs and software requirements to determine feasibility of design within time and cost constraints.",
+        "Task Type": "Core",
+        "Incumbents Responding": "72",
+        "Date": "08/2025",
+        "Domain Source": "Incumbent"
+      },
+      {
+        "O*NET-SOC Code": "15-1252.00",
+        "Title": "Software Developers",
+        "Task ID": "21669",
+        "Task": "Develop or direct software system testing or validation procedures, programming, or documentation.",
+        "Task Type": "Core",
+        "Incumbents Responding": "72",
+        "Date": "08/2025",
+        "Domain Source": "Incumbent"
+      },
+      {
+        "O*NET-SOC Code": "15-1252.00",
+        "Title": "Software Developers",
+        "Task ID": "21664",
+        "Task": "Confer with systems analysts, engineers, programmers and others to design systems and to obtain information on project limitations and capabilities, performance requirements and interfaces.",
+        "Task Type": "Core",
+        "Incumbents Responding": "72",
+        "Date": "08/2025",
+        "Domain Source": "Incumbent"
+      }
+    ]
+  },
+  "reference_validation": {
+    "essential_skills": {
+      "unknown_occupation_code_rows": 0,
+      "unknown_element_id_rows": 0,
+      "element_name_mismatch_rows": 0,
+      "unknown_scale_id_rows": 0
+    },
+    "transferable_skills": {
+      "unknown_occupation_code_rows": 0,
+      "unknown_element_id_rows": 0,
+      "element_name_mismatch_rows": 0,
+      "unknown_scale_id_rows": 0
+    },
+    "software_skills": {
+      "unknown_occupation_code_rows": 0,
+      "unknown_element_id_rows": 0,
+      "element_name_mismatch_rows": 0
+    }
+  },
+  "integration_notes": [
+    "Match occupation using the retained O*NET-SOC Code; do not use this occupation code alone to infer backend specialization, entry-level seniority, or posting geography.",
+    "Software Skills Workplace Example names are technology examples; their Element ID and Element Name are source categories, not unique technology identifiers.",
+    "Essential Skills and Transferable Skills have element-level ratings. Retain their source element IDs, source category names, scale IDs, ranges, and names separately from posting mention frequency.",
+    "Content Model Reference provides the actual element names and hierarchy. Period-separated parent prefixes are documented in its official data dictionary.",
+    "The source Software Skills Hot Technology and In Demand flags are retained as source metadata; they are not mention rates in the Kaggle snapshot.",
+    "All CSV cells were read as strings to preserve identifiers. Numeric ratings were converted only in the joined inspection summary.",
+    "No canonical skill aliases, job posting filters, or source-specific production ingestion were implemented in this inspection."
+  ],
+  "limitations": [
+    "This is a selected seven-file O*NET download, not the entire database.",
+    "O*NET describes occupations broadly; these associations do not establish entry-level backend requirements.",
+    "No source collection dates are asserted; some Software Developers rows have source update month 08/2025 within release 31.0.",
+    "The selected O*NET release must remain pinned when reproducing these joins. A later release can change file structures and associations.",
+    "O*NET data alone cannot establish available job-posting sample size or snapshot mention frequencies."
+  ]
+}

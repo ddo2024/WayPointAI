@@ -1,0 +1,396 @@
+{
+  "report_type": "source_inspection",
+  "schema_version": "1.0.0",
+  "is_mock": false,
+  "generated_at": "2026-10-24T00:41:42.185256Z",
+  "status": "downloaded_and_inspected_scope_not_validated",
+  "source": {
+    "source_id": "kaggle:asaniczka/software-engineer-job-postings-linkedin",
+    "title": "LinkedIn Software Engineering Jobs Dataset",
+    "creator": "asaniczka",
+    "source_url": "https://www.kaggle.com/datasets/asaniczka/software-engineer-job-postings-linkedin",
+    "metadata_url": "https://www.kaggle.com/api/v1/datasets/view/asaniczka/software-engineer-job-postings-linkedin",
+    "download_url": "https://www.kaggle.com/api/v1/datasets/download/asaniczka/software-engineer-job-postings-linkedin?datasetVersionNumber=3",
+    "version": 3,
+    "version_published_at": "2024-01-27T13:45:21.117Z",
+    "downloaded_at": "2026-10-24T00:32:44.860563Z",
+    "download_provenance_manifest": "data/raw/kaggle/download_provenance.json",
+    "download_provenance_note": "Acquisition timestamp read from the preserved manifest after verifying its archive SHA-256 and source/version. It is not inferred from filesystem timestamps.",
+    "collection_dates": null,
+    "license_name": "ODC Attribution License (ODC-By)",
+    "license_details_note": "License name is supplied by the official Kaggle API metadata; license text was not downloaded. Retain creator attribution and source URL.",
+    "provenance_files": [
+      {
+        "path": "data/raw/kaggle/dataset_metadata.json",
+        "bytes": 7800,
+        "sha256": "7cbb961f09596a43dfba142a89e8336a23037c4a2599f72bc6468a6677be15cd"
+      },
+      {
+        "path": "data/raw/kaggle/software-engineer-job-postings-linkedin-v3.zip",
+        "bytes": 11201787,
+        "sha256": "a70c9e8e0c4a8f26a0dd9964dfaf622de868027675c572c76ca15a5f473a1a35"
+      },
+      {
+        "path": "data/raw/kaggle/v3/postings.csv",
+        "bytes": 41704606,
+        "sha256": "b465267a35dcddf571834264056b43d3b8a761f24f2ee4e7e32b7e374c4b8af7"
+      }
+    ]
+  },
+  "file_inspection": {
+    "path": "data/raw/kaggle/v3/postings.csv",
+    "encoding": "UTF-8",
+    "row_count": 9380,
+    "column_count": 11,
+    "columns": [
+      {
+        "name": "job_title",
+        "pandas_inferred_dtype": "object",
+        "null_count": 0,
+        "blank_after_strip_count": 0
+      },
+      {
+        "name": "company",
+        "pandas_inferred_dtype": "object",
+        "null_count": 0,
+        "blank_after_strip_count": 0
+      },
+      {
+        "name": "job_location",
+        "pandas_inferred_dtype": "object",
+        "null_count": 0,
+        "blank_after_strip_count": 0
+      },
+      {
+        "name": "job_link",
+        "pandas_inferred_dtype": "object",
+        "null_count": 0,
+        "blank_after_strip_count": 0
+      },
+      {
+        "name": "first_seen",
+        "pandas_inferred_dtype": "object",
+        "null_count": 0,
+        "blank_after_strip_count": 0
+      },
+      {
+        "name": "search_city",
+        "pandas_inferred_dtype": "object",
+        "null_count": 0,
+        "blank_after_strip_count": 0
+      },
+      {
+        "name": "search_country",
+        "pandas_inferred_dtype": "object",
+        "null_count": 0,
+        "blank_after_strip_count": 0
+      },
+      {
+        "name": "job level",
+        "pandas_inferred_dtype": "object",
+        "null_count": 0,
+        "blank_after_strip_count": 0
+      },
+      {
+        "name": "job_type",
+        "pandas_inferred_dtype": "object",
+        "null_count": 0,
+        "blank_after_strip_count": 0
+      },
+      {
+        "name": "job_summary",
+        "pandas_inferred_dtype": "object",
+        "null_count": 4,
+        "blank_after_strip_count": 4
+      },
+      {
+        "name": "job_skills",
+        "pandas_inferred_dtype": "object",
+        "null_count": 13,
+        "blank_after_strip_count": 13
+      }
+    ],
+    "dates": {
+      "first_seen": {
+        "unique_values": {
+          "2023-12-25": 9380
+        },
+        "parse_format": "%Y-%m-%d",
+        "parse_failure_count": 0,
+        "min": "2023-12-25",
+        "max": "2023-12-25",
+        "meaning": "Field label says first_seen; it is not independently verified as publication date or scrape/collection date. Keep collection_dates null."
+      }
+    },
+    "distributions": {
+      "search_country": {
+        "United States": 7335,
+        "United Kingdom": 1108,
+        "Canada": 675,
+        "Australia": 262
+      },
+      "job level": {
+        "Mid senior": 8101,
+        "Associate": 1279
+      },
+      "job_type": {
+        "Onsite": 4316,
+        "Hybrid": 2745,
+        "Remote": 2319
+      }
+    },
+    "text_availability": {
+      "nonblank_job_summary_count": 9376,
+      "missing_or_blank_job_summary_count": 4,
+      "nonblank_summary_characters_min": 109,
+      "nonblank_summary_characters_median": 3799.5,
+      "nonblank_summary_characters_max": 17433,
+      "scope": "Nonblank text is an availability check, not a completed requirement-usability assessment."
+    },
+    "source_identifier_check": {
+      "identifier": "numeric LinkedIn job ID at end of /jobs/view/ URL path",
+      "parseable_id_rows": 9376,
+      "unparseable_id_rows": 4,
+      "unique_parseable_ids": 9375,
+      "unparseable_rows": [
+        {
+          "csv_data_row_number": 2410,
+          "posting_id": null,
+          "job_title": "Software Engineer",
+          "company": "Instacart",
+          "job_location": "Toronto, Ontario, Canada",
+          "job_link": "https://ca.linkedin.com/jobs/software-engineer-jobs",
+          "first_seen": "2023-12-25",
+          "search_country": "Canada",
+          "job level": "Associate",
+          "job_type": "Onsite",
+          "summary_characters": 0,
+          "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "csv_data_row_number": 5681,
+          "posting_id": null,
+          "job_title": "Software Engineer - Frontend (Australia)",
+          "company": "Jasper",
+          "job_location": "Sydney, New South Wales, Australia",
+          "job_link": "https://au.linkedin.com/jobs/software-engineer-jobs",
+          "first_seen": "2023-12-25",
+          "search_country": "Australia",
+          "job level": "Associate",
+          "job_type": "Onsite",
+          "summary_characters": 0,
+          "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "csv_data_row_number": 7324,
+          "posting_id": null,
+          "job_title": "Software Engineer, Backend",
+          "company": "Notion",
+          "job_location": "San Francisco, CA",
+          "job_link": "https://www.linkedin.com/jobs/software-engineer-jobs",
+          "first_seen": "2023-12-25",
+          "search_country": "United States",
+          "job level": "Associate",
+          "job_type": "Remote",
+          "summary_characters": 0,
+          "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "csv_data_row_number": 7773,
+          "posting_id": null,
+          "job_title": "Graduate Software Engineer",
+          "company": "Capsule",
+          "job_location": "Manchester, England, United Kingdom",
+          "job_link": "https://uk.linkedin.com/jobs/software-engineer-jobs",
+          "first_seen": "2023-12-25",
+          "search_country": "United Kingdom",
+          "job level": "Mid senior",
+          "job_type": "Remote",
+          "summary_characters": 0,
+          "summary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    "duplicate_diagnostics": {
+      "exact_duplicate_row_count": 0,
+      "duplicate_exact_job_link_excess_rows": 0,
+      "duplicate_parseable_source_id_excess_rows": 1,
+      "normalized_company_title_location_summary_excess_rows": 133,
+      "fallback_normalization": "Unicode NFKC, whitespace collapse, strip, casefold; all four fields must match. This is an inspection diagnostic, not the approved production deduplication rule.",
+      "source_id_duplicate_rows": [
+        {
+          "csv_data_row_number": 1133,
+          "posting_id": "3556986271",
+          "job_title": "Java Software Engineer",
+          "company": "Token Staffing Corp",
+          "job_location": "New York City Metropolitan Area",
+          "job_link": "https://www.linkedin.com/jobs/view/java-software-engineer-at-token-staffing-corp-3556986271",
+          "first_seen": "2023-12-25",
+          "search_country": "United States",
+          "job level": "Associate",
+          "job_type": "Hybrid",
+          "summary_characters": 1770,
+          "summary_sha256": "0dedcc3f17ba44ca47171ab9200cde835250d50ab2cbda71ee7958f0ebcedabe"
+        },
+        {
+          "csv_data_row_number": 1497,
+          "posting_id": "3556986271",
+          "job_title": "Java Software Engineer",
+          "company": "Token Staffing Corp",
+          "job_location": "New York City Metropolitan Area",
+          "job_link": "https://www.linkedin.com/jobs/view/java-software-engineer-3556986271",
+          "first_seen": "2023-12-25",
+          "search_country": "United States",
+          "job level": "Associate",
+          "job_type": "Hybrid",
+          "summary_characters": 1770,
+          "summary_sha256": "0dedcc3f17ba44ca47171ab9200cde835250d50ab2cbda71ee7958f0ebcedabe"
+        }
+      ],
+      "records_removed": 0,
+      "note": "Raw data is unchanged. No cleaning pipeline was run. Screening evaluates both raw rows and a temporary first-row-per-valid-ID view."
+    },
+    "representative_records": [
+      {
+        "csv_data_row_number": 1,
+        "posting_id": "3780474203",
+        "job_title": "C# Software Engineer",
+        "company": "E Tech Group",
+        "job_location": "West Chester, OH",
+        "job_link": "https://www.linkedin.com/jobs/view/c%23-software-engineer-at-e-tech-group-3780474203",
+        "first_seen": "2023-12-25",
+        "search_country": "United States",
+        "job level": "Associate",
+        "job_type": "Remote",
+        "summary_characters": 3124,
+        "summary_sha256": "5280bc0b48692461dd3316ac5e79ecdc7ac27cd91b57b44984261a52cc39ba92"
+      },
+      {
+        "csv_data_row_number": 4691,
+        "posting_id": "3777058317",
+        "job_title": "Senior Software Development Engineer, Amazon Stores",
+        "company": "Amazon",
+        "job_location": "North Reading, MA",
+        "job_link": "https://www.linkedin.com/jobs/view/senior-software-development-engineer-amazon-stores-at-amazon-3777058317",
+        "first_seen": "2023-12-25",
+        "search_country": "United States",
+        "job level": "Mid senior",
+        "job_type": "Onsite",
+        "summary_characters": 7595,
+        "summary_sha256": "7dc3f2f0417932f440434b5a2221ce86aee4f2fc83822286393faef65e343c42"
+      },
+      {
+        "csv_data_row_number": 9380,
+        "posting_id": "3790463682",
+        "job_title": "6J7BI3-Software Engineer 3 - 6D6-Real Time Software Engineer with Security Clearance",
+        "company": "ClearanceJobs",
+        "job_location": "Berkeley, MO",
+        "job_link": "https://www.linkedin.com/jobs/view/6j7bi3-software-engineer-3-6d6-real-time-software-engineer-with-security-clearance-at-clearancejobs-3790463682",
+        "first_seen": "2023-12-25",
+        "search_country": "United States",
+        "job level": "Mid senior",
+        "job_type": "Hybrid",
+        "summary_characters": 4084,
+        "summary_sha256": "a949fa4cef861d4b2b3886073213fd921d1d002f00bbe55b2c62c76718bfec56"
+      }
+    ]
+  },
+  "scope_screening": {
+    "requested_scope": {
+      "occupation": "software_developer",
+      "specialization": "backend",
+      "seniority": "entry_level",
+      "geography": "US"
+    },
+    "status": "insufficient_evidence_to_confirm_usable_scope",
+    "rules_version": "inspection-title-screen-v1",
+    "rules": {
+      "occupation": {
+        "input": "job_title",
+        "positive_pattern": "\\bsoftware\\s+(?:engineer|developer)\\b",
+        "note": "Provisional title cue; no O*NET mapping has been performed."
+      },
+      "specialization": {
+        "input": "job_title",
+        "positive_pattern": "\\bback[ -]?end\\b",
+        "unknown": "Titles without this explicit cue are unknown, not confirmed non-backend. Descriptions have not been classified."
+      },
+      "seniority": {
+        "input": "job_title",
+        "entry_pattern": "\\b(?:entry[ -]?level|junior|jr\\.?|new[ -]?grad(?:uate)?|graduate|beginning)\\b",
+        "nonentry_pattern": "\\b(?:senior|sr\\.?|staff|principal|lead|manager|director|architect)\\b",
+        "conflict": "Both entry and nonentry title cues => conflict; neither => unknown. The source job level is retained but not used as an entry-level filter. Associate does not establish entry level."
+      },
+      "geography": {
+        "input": "job_location",
+        "us_positive_pattern": "\\bUnited States\\b|,\\s*(?:AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|VA|WA|WV|WI|WY|DC)\\s*$",
+        "explicit_other_country_pattern": "\\b(?:United Kingdom|Canada|Australia)\\b",
+        "conflict": "Both => conflict; neither => unknown. search_country is search provenance, not proof of job location or remote eligibility. No metro-area lookup or remote text inference was performed."
+      },
+      "text": "Nonblank job_summary only for screening availability; production requirement-usability decisions pending.",
+      "selection": "All positive title/location cues, no title or location conflict, parseable source ID. No filters broadened."
+    },
+    "independent_counts": {
+      "occupation_title_cue": 8052,
+      "backend_title_cue": 606,
+      "entry_title_cue": 92,
+      "nonentry_title_cue": 5484,
+      "seniority_title_conflict": 5,
+      "seniority_title_unknown": 3809,
+      "source_mid_senior_with_entry_title_cue": 63,
+      "source_associate_with_nonentry_title_cue": 395,
+      "us_location_cue_without_location_conflict": 7029,
+      "explicit_nonus_location_cue_without_location_conflict": 1990,
+      "geography_location_conflict": 0,
+      "geography_unknown": 361,
+      "backend_plus_entry_title_cues": 1,
+      "all_positive_scope_cues_raw_rows": 1,
+      "all_positive_scope_cues_unique_source_ids": 1,
+      "all_positive_scope_cues_with_nonblank_summary": 1
+    },
+    "candidate_records": [
+      {
+        "csv_data_row_number": 9359,
+        "posting_id": "3784448460",
+        "job_title": "Beginning Software Engineer (Back End)",
+        "company": "Boeing Intelligence & Analytics",
+        "job_location": "Annapolis Junction, MD",
+        "job_link": "https://www.linkedin.com/jobs/view/beginning-software-engineer-back-end-at-boeing-intelligence-analytics-3784448460",
+        "first_seen": "2023-12-25",
+        "search_country": "United States",
+        "job level": "Associate",
+        "job_type": "Hybrid",
+        "summary_characters": 4646,
+        "summary_sha256": "d4f460af8a0c28fd66721b7d21fd998c431cf8ffd8b8ff1d2175d474d18f1ff4"
+      }
+    ],
+    "candidate_caveat": "If selected, posting 3784448460 requires TS/SCI clearance with polygraph. Its bachelor-degree OR four-year experience alternative must not be misread as four years required for all applicants. Other candidate requirements require their own review.",
+    "adequacy_decision": "No final eligible_postings_count or analyzed_postings_count is published. Full description-based classification and a declared minimum sample size are still needed. This conservative screen does not establish that only one qualifying posting exists in the entire dataset."
+  },
+  "data_quality": {
+    "source_files_downloaded": true,
+    "raw_inputs_preserved": true,
+    "exclusions_performed": 0,
+    "missing_description_count": 4,
+    "extraction_errors": null,
+    "manual_skill_audit_status": "not_performed_no_skill_extractor_implemented",
+    "limitations": [
+      "This is version 3 of a scraped LinkedIn sample, published 2024-01-27T13:45:21.117Z. It is not live market demand or a representative census.",
+      "The first_seen distribution and version publication timestamp are recorded separately. Neither is asserted as an independently verified collection window.",
+      "job_skills contains source-provided skill strings; their extraction method, correctness, and context have not been verified. They are not substitutes for direct job_summary evidence.",
+      "Only Associate and Mid senior source labels exist, and title/description conflicts show that Associate cannot automatically mean entry level.",
+      "search_country is search provenance; actual geography and remote eligibility need job_location and description checks.",
+      "4 records have no parseable numeric posting ID. Invalid IDs and missing summaries are reported independently.",
+      "1 excess rows share a numeric LinkedIn job ID. Compare these with exact-URL duplicates before defining the final deduplication policy.",
+      "Conservative title screening deliberately leaves generic titles, metro locations, and description-only backend/entry cues unresolved.",
+      "No real skill frequencies, cleaned-posting export, final role classifications, or source-specific ingestion pipeline have been generated."
+    ],
+    "next_steps": [
+      "Inspect a reproducible stratified sample of ambiguous titles, location-only unknowns, source-level conflicts, and summary requirements before defining classification rules.",
+      "Agree what entry level includes: new graduate/junior labels, explicit zero-to-two-year requirements, internships, and degree-versus-experience alternatives.",
+      "Implement raw-to-clean text transformation and source-ID/fallback deduplication with removal ledgers.",
+      "Run conservative classification, preserve conflicts/unknowns, and report the actual available eligible and usable sample before any scope changes.",
+      "Choose and document a minimum sample policy before publishing role frequencies; report insufficient data when needed."
+    ]
+  }
+}

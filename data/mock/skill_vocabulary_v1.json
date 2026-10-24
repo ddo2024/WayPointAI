@@ -1,0 +1,228 @@
+{
+  "schema_version": "1.0.0",
+  "vocabulary_version": "mock-1.0.0",
+  "is_mock": true,
+  "skills": [
+    {
+      "canonical_id": "skill:aws",
+      "display_name": "AWS",
+      "category": "cloud_platform",
+      "aliases": [
+        "Amazon Web Services"
+      ],
+      "matching_policy": {
+        "case_sensitive": false,
+        "boundary": "technology_token_v1",
+        "overlap": "longest_match_first",
+        "context_requirements": []
+      }
+    },
+    {
+      "canonical_id": "skill:c",
+      "display_name": "C",
+      "category": "programming_language",
+      "aliases": [],
+      "matching_policy": {
+        "case_sensitive": true,
+        "boundary": "technology_token_v1",
+        "overlap": "longest_match_first",
+        "context_requirements": [
+          {
+            "alias": "C",
+            "any_of_patterns": [
+              "(?<![A-Za-z0-9_+#.])C\\s+(?:programming|language|developer)(?![A-Za-z0-9_])"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "skill:c_plus_plus",
+      "display_name": "C++",
+      "category": "programming_language",
+      "aliases": [],
+      "matching_policy": {
+        "case_sensitive": false,
+        "boundary": "technology_token_v1",
+        "overlap": "longest_match_first",
+        "context_requirements": []
+      }
+    },
+    {
+      "canonical_id": "skill:c_sharp",
+      "display_name": "C#",
+      "category": "programming_language",
+      "aliases": [],
+      "matching_policy": {
+        "case_sensitive": false,
+        "boundary": "technology_token_v1",
+        "overlap": "longest_match_first",
+        "context_requirements": []
+      }
+    },
+    {
+      "canonical_id": "skill:dotnet",
+      "display_name": ".NET",
+      "category": "framework",
+      "aliases": [],
+      "matching_policy": {
+        "case_sensitive": false,
+        "boundary": "technology_token_v1",
+        "overlap": "longest_match_first",
+        "context_requirements": []
+      }
+    },
+    {
+      "canonical_id": "skill:git",
+      "display_name": "Git",
+      "category": "version_control",
+      "aliases": [],
+      "matching_policy": {
+        "case_sensitive": false,
+        "boundary": "technology_token_v1",
+        "overlap": "longest_match_first",
+        "context_requirements": []
+      }
+    },
+    {
+      "canonical_id": "skill:github",
+      "display_name": "GitHub",
+      "category": "developer_platform",
+      "aliases": [],
+      "matching_policy": {
+        "case_sensitive": false,
+        "boundary": "technology_token_v1",
+        "overlap": "longest_match_first",
+        "context_requirements": []
+      }
+    },
+    {
+      "canonical_id": "skill:go",
+      "display_name": "Go",
+      "category": "programming_language",
+      "aliases": [
+        "Golang"
+      ],
+      "matching_policy": {
+        "case_sensitive": false,
+        "boundary": "technology_token_v1",
+        "overlap": "longest_match_first",
+        "context_requirements": [
+          {
+            "alias": "Go",
+            "any_of_patterns": [
+              "(?<![A-Za-z0-9_+#.])Go\\s+(?:programming|language|developer)(?![A-Za-z0-9_])"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "skill:java",
+      "display_name": "Java",
+      "category": "programming_language",
+      "aliases": [],
+      "matching_policy": {
+        "case_sensitive": false,
+        "boundary": "technology_token_v1",
+        "overlap": "longest_match_first",
+        "context_requirements": []
+      }
+    },
+    {
+      "canonical_id": "skill:javascript",
+      "display_name": "JavaScript",
+      "category": "programming_language",
+      "aliases": [],
+      "matching_policy": {
+        "case_sensitive": false,
+        "boundary": "technology_token_v1",
+        "overlap": "longest_match_first",
+        "context_requirements": []
+      }
+    },
+    {
+      "canonical_id": "skill:nodejs",
+      "display_name": "Node.js",
+      "category": "runtime",
+      "aliases": [],
+      "matching_policy": {
+        "case_sensitive": false,
+        "boundary": "technology_token_v1",
+        "overlap": "longest_match_first",
+        "context_requirements": []
+      }
+    },
+    {
+      "canonical_id": "skill:postgresql",
+      "display_name": "PostgreSQL",
+      "category": "database",
+      "aliases": [
+        "Postgres"
+      ],
+      "matching_policy": {
+        "case_sensitive": false,
+        "boundary": "technology_token_v1",
+        "overlap": "longest_match_first",
+        "context_requirements": []
+      }
+    },
+    {
+      "canonical_id": "skill:python",
+      "display_name": "Python",
+      "category": "programming_language",
+      "aliases": [],
+      "matching_policy": {
+        "case_sensitive": false,
+        "boundary": "technology_token_v1",
+        "overlap": "longest_match_first",
+        "context_requirements": []
+      }
+    },
+    {
+      "canonical_id": "skill:r",
+      "display_name": "R",
+      "category": "programming_language",
+      "aliases": [],
+      "matching_policy": {
+        "case_sensitive": true,
+        "boundary": "technology_token_v1",
+        "overlap": "longest_match_first",
+        "context_requirements": [
+          {
+            "alias": "R",
+            "any_of_patterns": [
+              "(?<![A-Za-z0-9_+#.])R\\s+(?:programming|language|developer)(?![A-Za-z0-9_])"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "skill:scikit_learn",
+      "display_name": "scikit-learn",
+      "category": "machine_learning_library",
+      "aliases": [
+        "sklearn"
+      ],
+      "matching_policy": {
+        "case_sensitive": false,
+        "boundary": "technology_token_v1",
+        "overlap": "longest_match_first",
+        "context_requirements": []
+      }
+    },
+    {
+      "canonical_id": "skill:sql",
+      "display_name": "SQL",
+      "category": "query_language",
+      "aliases": [],
+      "matching_policy": {
+        "case_sensitive": false,
+        "boundary": "technology_token_v1",
+        "overlap": "longest_match_first",
+        "context_requirements": []
+      }
+    }
+  ]
+}
